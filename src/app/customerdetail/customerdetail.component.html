@@ -1,0 +1,11 @@
+<div *ngIf="customer">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ customer?.firstName }} {{ customer?.lastName }}</h3>
+  </div>
+  <div class="panel-body">
+    <p>Email adress: {{ customer.emailAdress }}</p>
+    <p>Date of borth: {{ customer.dateOfBirth }}</p>
+  </div>
+</div>
+</div>
