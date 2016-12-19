@@ -29,3 +29,15 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Run with docker
+
+First build the frontend app so the transpiled js and static assets end up in the `dist` folder.
+
+Build the container from the accompanied Dockerfile with:
+
+`docker build -f Dockerfile -t customerfrontend .``
+
+and run the container:
+
+`dockerun -p 80:80 customerfrontend .`
